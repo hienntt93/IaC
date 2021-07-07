@@ -7,3 +7,13 @@ Stored procedures
 create procedure user_login @username varchar(20), @passwd varchar(20) As Declare @sqlstring varchar(250) Set @sqlstring = ' Select 1 from users Where username = ' + @username + ' and passwd = ' + @passwd exec(@sqlstring) Go
 
 
+gvm-cli tls --gmp-username admin --hostname 10.1.1.13 --xml "<create_target><name>Metasploitablt</name><hosts>10.1.1.14</hosts></create_target>"
+
+
+gvm-cli tls --gmp-username admin \
+--hostname 10.1.1.13 \
+--xml "<create_target><name>Metasploitablt</name> \
+<target id=\"swewegfewg\"></target> \
+<config id=\"aefefw\"></config><create_task>"
+
+gvm-pyshell 
